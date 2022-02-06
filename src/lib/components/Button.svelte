@@ -53,6 +53,7 @@
     border: 1px solid gray;
     padding: 8px 15px;
     margin-bottom: var(--margin-bottom, 20px);
+    margin-right: 10px;
   }
   div {
     color: inherit;

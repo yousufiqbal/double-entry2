@@ -15,7 +15,7 @@
 
 <div class="field">
   <label for="{name}">{label}</label>
-  <input on:focus={touchMe} use:typeMe {name} size="1" bind:value bind:this={el} {inputmode} {maxlength} {minlength} {placeholder} {pattern} >
+  <input on:blur={()=>touchMe()} use:typeMe {name} size="1" bind:value bind:this={el} {inputmode} {maxlength} {minlength} {placeholder} {pattern} >
   {#if touched && errors[name]}
   <div class="error">{errors[name]}</div>
   {/if}
@@ -52,5 +52,8 @@
     border: 1px solid gray;
     border-top: none;
     color: red;
+  }
+  .error::first-letter {
+    text-transform: capitalize;
   }
 </style>
