@@ -1,0 +1,34 @@
+
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0; padding: 0;
+  font-family: 'KoHo';
+  font-size: 14px;
+  font-weight: normal;
+  color: black; text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+input:focus, button:focus {
+  outline: 0;
+}
+
+a, button {
+  color: blue;
+}
+
+a:hover, button:hover {
+  color: red;
+}
+
+body {
+  /* border: 1px solid blue; */
+  padding: 20px;
+}

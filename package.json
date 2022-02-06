@@ -1,0 +1,32 @@
+{
+  "name": "double-entry",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "package": "svelte-kit package",
+    "preview": "svelte-kit preview",
+    "lint": "eslint --ignore-path .gitignore ."
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "next",
+    "@sveltejs/kit": "next",
+    "eslint": "^7.32.0",
+    "eslint-plugin-svelte3": "^3.2.1",
+    "svelte": "^3.44.0",
+    "svelte-preprocess": "^4.10.2"
+  },
+  "type": "module",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^7.5.0",
+    "cookie": "^0.4.2",
+    "dayjs": "^1.10.7",
+    "jsonwebtoken": "^8.5.1",
+    "kysely": "^0.16.11",
+    "lodash": "^4.17.21",
+    "mysql2": "^2.3.3",
+    "redaxios": "^0.4.1",
+    "yup": "^0.32.11"
+  }
+}
