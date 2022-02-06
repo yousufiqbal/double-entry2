@@ -54,6 +54,9 @@
     padding: 8px 15px;
     margin-bottom: var(--margin-bottom, 20px);
   }
+  div {
+    color: inherit;
+  }
   .styled:first-child {
     border-left: 1px solid gray;
   }
@@ -73,7 +76,8 @@
     border: 1px solid red;
   } */
   .primary {
-    background-color: rgb(236, 236, 236);
+    background-color: rgb(5, 160, 0);
+    color: white !important;
   }
   .danger {
     background-color: rgb(255, 148, 148);

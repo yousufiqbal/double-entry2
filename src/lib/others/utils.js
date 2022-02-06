@@ -23,7 +23,7 @@ export const extractYupErrors = err => {
 }
 
 export const internalError = () => ({
-  status: 500, body: 'Error from our side. We apologize'
+  status: 500, body: { message: 'Error from our side. We apologize' }
 })
 
 export const beautifyDateTime = (ISO8601 = '') => {

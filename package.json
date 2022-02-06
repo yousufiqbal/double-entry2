@@ -23,7 +23,7 @@
     "cookie": "^0.4.2",
     "dayjs": "^1.10.7",
     "jsonwebtoken": "^8.5.1",
-    "kysely": "^0.16.11",
+    "knex": "^1.0.2",
     "lodash": "^4.17.21",
     "mysql2": "^2.3.3",
     "redaxios": "^0.4.1",
