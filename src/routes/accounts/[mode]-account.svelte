@@ -39,7 +39,7 @@ import { startCase } from "lodash";
     account.name = ''
     el.focus()
     touched = false
-    errors = null
+    errors = []
   }
 
   const addAccount = async () => {
