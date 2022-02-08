@@ -1,13 +1,13 @@
 <script>
-import { beautifyDate } from "$lib/others/utils";
-
+  import { beautifyDate } from "$lib/others/utils";
   import { Nothing, Table } from "@yousufiqbal/ui";
-import { kebabCase } from "lodash-es";
+  import { kebabCase } from "lodash-es";
 
   export let accounts = []
 </script>
 
 {#if accounts.length != 0}
+
 <Table>
   <tr>
     <th>Sr.</th>
