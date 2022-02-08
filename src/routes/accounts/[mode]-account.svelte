@@ -5,6 +5,7 @@
   import { goto } from '$app/navigation'
 import { accountSchema, extractYupErrors } from "$lib/database/schema";
 import { axios } from "$lib/others/utils";
+import { dev } from "$app/env";
 
   let account = {}, touched = false, errors = []
 
@@ -29,9 +30,10 @@ import { axios } from "$lib/others/utils";
 
   const addAccount = async () => {
     try {
-      await axios.post('/api/accounts')
+      await axios.post('/api/accounts', account)
       doAfterAdd()
     } catch (error) {
+      if (dev) console.log(error)
       alert(error.data?.message || 'Error')
     }
   }

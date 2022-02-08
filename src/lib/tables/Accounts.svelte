@@ -2,6 +2,7 @@
 import { beautifyDate } from "$lib/others/utils";
 
   import { Nothing, Table } from "@yousufiqbal/ui";
+import { kebabCase } from "lodash-es";
 
   export let accounts = []
 </script>
@@ -16,7 +17,7 @@ import { beautifyDate } from "$lib/others/utils";
   {#each accounts as account, index (account.account_id)}
   <tr>
     <td>{index + 1}</td>
-    <td><a href="/accounts/{account.name}">{account.name}</a></td>
+    <td><a href="/accounts/{kebabCase(account.name)}">{account.name}</a></td>
     <td>{beautifyDate(account.created)}</td>
     <td><a href="/accounts/edit-account?account_id={account.account_id}">Edit</a></td>
   </tr>

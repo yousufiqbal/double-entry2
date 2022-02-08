@@ -10,6 +10,6 @@ export const post = async ({request}) => {
     await knex('accounts').insert(account)
     return { status: 201, body: { message: 'Account added'} }
   } catch (error) {
-    return internalError()
+    return internalError(error)
   }
 }
