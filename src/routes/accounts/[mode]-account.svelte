@@ -1,13 +1,12 @@
 <script>
-import { page } from "$app/stores";
-
+  import { page } from "$app/stores";
   import Button from "$lib/components/Button.svelte";
   import Field from "$lib/components/Field.svelte";
   import FieldGroup from "$lib/components/FieldGroup.svelte";
   import Title from "$lib/components/Title.svelte";
   import { accountSchema, extractYupErrors } from "$lib/database/schema";
   import { axios } from "$lib/others/utils";
-import { startCase } from "lodash";
+  import { startCase } from "lodash";
 
   let account = {}, el = null
   let touched = false, errors = []
@@ -37,9 +36,10 @@ import { startCase } from "lodash";
 
   const doAfterAdd = () => {
     account.name = ''
+    errors = []
     el.focus()
     touched = false
-    errors = []
+    console.log(touched, errors, account.name)
   }
 
   const addAccount = async () => {

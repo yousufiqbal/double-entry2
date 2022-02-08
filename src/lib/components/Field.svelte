@@ -16,7 +16,7 @@
 
 <div class="field">
   <label for="{name}">{label}</label>
-  <input {inputmode} {disabled} on:focus={touchMe} id={name} use:typeMe {name} size="1" bind:value bind:this={el} {maxlength} {minlength} {placeholder} {pattern} >
+  <input {inputmode} {disabled} on:blur={touchMe} id={name} use:typeMe {name} size="1" bind:value bind:this={el} {maxlength} {minlength} {placeholder} {pattern} >
   {#if touched && errors[name]}
   <div class="error">{errors[name]}</div>
   {/if}
