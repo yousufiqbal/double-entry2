@@ -21,5 +21,5 @@ export const extractYupErrors = err => {
 
 // Example..
 export const accountSchema = yup.object({
-  name: yup.string().min(2).max(200).required().ne(),
+  name: yup.string().min(2).max(50).required().ne(),
 }).noUnknown(true)
