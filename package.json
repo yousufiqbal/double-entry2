@@ -19,7 +19,7 @@
   },
   "type": "module",
   "dependencies": {
-    "@yousufiqbal/ui": "^2.31.0",
+    "@yousufiqbal/ui": "^2.32.0",
     "bcryptjs": "^2.4.3",
     "cookie": "^0.4.2",
     "dayjs": "^1.10.7",
